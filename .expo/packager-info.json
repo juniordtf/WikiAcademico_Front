@@ -3,7 +3,7 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://8q-avh.juniordtf.frontend.exp.direct",
+  "packagerNgrokUrl": "https://packager.8q-avh.juniordtf.frontend.exp.direct",
+  "ngrokPid": 86044
 }

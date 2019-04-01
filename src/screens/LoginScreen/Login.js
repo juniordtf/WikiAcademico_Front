@@ -49,7 +49,7 @@ class Login extends React.Component {
     await axios
       .request({
         method: "post",
-        url: "http://localhost:4321/api/Users/login",
+        url: "http://ec2-13-58-129-180.us-east-2.compute.amazonaws.com:4321/api/Users/login",
         data: credentials
       })
       .then(response => {

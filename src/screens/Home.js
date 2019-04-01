@@ -52,7 +52,7 @@ class Home extends React.Component {
     const userId = this.props.navigation.getParam("userId");
 
     axios
-      .get("http://localhost:4321/api/Users/:"+userId)
+      .get("http://ec2-13-58-129-180.us-east-2.compute.amazonaws.com:4321/api/Users/:"+userId)
       .then(response => {
         this.setState({ username: response.data.username });
       })
@@ -64,7 +64,7 @@ class Home extends React.Component {
     const acc = await AsyncStorage.getItem("userToken");
 
     axios
-      .post("http://localhost:4321/api/Users/logout?access_token=" + acc)
+      .post("http://ec2-13-58-129-180.us-east-2.compute.amazonaws.com:4321/api/Users/logout?access_token=" + acc)
       .then(response => {
         console.log(response.body);
       })

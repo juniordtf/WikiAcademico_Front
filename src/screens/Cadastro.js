@@ -45,7 +45,7 @@ class Cadastro extends React.Component {
 
     axios({
       method: "post",
-      url: "http://localhost:4321/api/Users",
+      url: "http://ec2-13-58-129-180.us-east-2.compute.amazonaws.com:4321/api/Users",
       data: newUser
     })
       .then(response => {
